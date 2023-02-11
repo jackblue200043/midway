@@ -93,7 +93,7 @@ import { Provide, makeHttpRequest } from '@midwayjs/core';
 @Provide()
 export class WeatherService {
   async getWeather(cityId: string) {
-    return makeHttpRequest(`http://www.weather.com.cn/data/cityinfo/${cityId}.html`, {
+    return makeHttpRequest(`http://www.weather.com.cn/data/sk/${cityId}.html`, {
       dataType: 'json',
     });
   }
